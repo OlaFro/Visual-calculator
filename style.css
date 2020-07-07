@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: monospace;
+  font-size: 2rem;
 }
 
 .display {
@@ -17,17 +19,25 @@
   height: 15%;
   border: 1px solid black;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button > *:active {
+  background-color: yellow;
 }
 
 .calculator,
-.display,
-.buttons {
+.display {
   border: 1px solid black;
   margin: auto;
   border-radius: 15px;
 }
 
 .buttons {
+  margin: auto;
+  border-radius: 15px;
   width: 90%;
   height: 70%;
   display: flex;
