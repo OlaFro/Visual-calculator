@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>You can count on me</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="calculator">
-      <div class="display" id="display"></div>
+      <div class="display">
+        <span id="display" class="numberDisplay"></span>
+      </div>
       <div class="buttons">
         <div class="ac" id="ac">ac</div>
         <div class="plus-minus" id="plus-minus">+/-</div>
         <div class="percentage" id="percentage">%</div>
         <div class="divide" id="divide" onclick="">/</div>
-        <div class="seven" id="seven" onclick="display()">7</div>
-        <div class="eight" id="eight" onclick="display()">8</div>
-        <div class="nine" id="nine" onclick="display()">9</div>
-        <div class="multiply" id="multiply" onclick="">*</div>
-        <div class="four" id="four" onclick="display()">4</div>
-        <div class="five" id="five" onclick="display()">5</div>
-        <div class="six" id="six" onclick="display()">6</div>
-        <div class="minus" id="minus" onclick="">-</div>
-        <div class="one" id="one" onclick="display()">2</div>
-        <div class="two" id="two" onclick="display()">3</div>
-        <div class="three" id="three" onclick="display()">4</div>
+        <div class="seven" id="seven" onclick="display(7)">7</div>
+        <div class="eight" id="eight" onclick="display(8)">8</div>
+        <div class="nine" id="nine" onclick="display(9)">9</div>
+        <div class="multiply" id="multiply" onclick="display(*)">*</div>
+        <div class="four" id="four" onclick="display(4)">4</div>
+        <div class="five" id="five" onclick="display(5)">5</div>
+        <div class="six" id="six" onclick="display(6)">6</div>
+        <div class="minus" id="minus" onclick="display(-)">-</div>
+        <div class="one" id="one" onclick="display(1)">1</div>
+        <div class="two" id="two" onclick="display(2)">2</div>
+        <div class="three" id="three" onclick="display(3)">3</div>
         <div class="plus" id="plus" onclick="">+</div>
-        <div class="zero" id="zero" onclick="display()">0</div>
+        <div class="zero" id="zero" onclick="display(0)">0</div>
         <div class="point" id="point" onclick="display()">.</div>
         <div class="equal" id="equal" onclick="">=</div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

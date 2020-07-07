@@ -1,45 +1,47 @@
-display(){
-    for (i=1; i<=9; i++){
-        switch(i) {
-            case 1 (
-                document.getElementById("display").innerHTML = "1";
-                break;
-            )
-            case 2 (
-                document.getElementById("display").innerHTML = "2";
-                break;
-            )
-            case 3 (
-                document.getElementById("display").innerHTML = "3";
-                break;
-            )
-            case 4 (
-                document.getElementById("display").innerHTML = "4";
-                break;
-            )
-            case 5 (
-                document.getElementById("display").innerHTML = "5";
-                break;
-            )
-            case 6 (
-                document.getElementById("display").innerHTML = "6";
-                break;
-            )
-            case 7 (
-                document.getElementById("display").innerHTML = "7";
-                break;
-            )
-            case 8 (
-                document.getElementById("display").innerHTML = "8";
-                break;
-            )
-            case 9 (
-                document.getElementById("display").innerHTML = "9";
-                break;
-            )
-            
-        }
+// function display() {
+//   for (i = 1; i <= 9; i++) {
+//     switch (i) {
+//       case 1:
+//         var x = 1;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 2:
+//         x = 2;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 3:
+//         x = 3;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 4:
+//         x = 4;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 5:
+//         x = 5;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 6:
+//         x = 6;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 7:
+//         x = 7;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 8:
+//         x = 8;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//       case 9:
+//         x = 9;
+//         document.getElementById("display").innerHTML = ` ${x}`;
+//         break;
+//     }
+//   }
+// }
 
-    }
-    
+function display(x) {
+  var number = x;
+  document.getElementById("display").innerHTML = ` ${x}`;
 }
