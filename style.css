@@ -10,6 +10,7 @@
   border: 1px solid black;
   margin: auto;
   border-radius: 30px;
+  background-color: rgb(255, 255, 255);
 }
 
 .display {
@@ -18,11 +19,13 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  background-color: rgb(212, 248, 212);
 }
 
 .numberDisplay {
   margin-bottom: 1rem;
   font-size: 5rem;
+  color: white;
 }
 
 .buttons > * {
@@ -65,5 +68,5 @@
 
 .ac,
 .plus-minus {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
