@@ -17,14 +17,23 @@ function ac() {
 //   document.getElementById("display").innerHTML += `- ${x}`;
 // }
 
-function modulus() {
+// function modulus() {
+//   let result = document.getElementById("display").innerHTML;
+//   console.log(result);
+//   let splittedResult = result.split(`\n`);
+//   console.log(splittedResult);
+//   let a = splittedResult[0];
+//   console.log(a);
+//   let b = splittedResult[2];
+//   document.getElementById("display").innerHTML = parseInt(a);
+// }
+
+function percentage() {
   let result = document.getElementById("display").innerHTML;
-  console.log(result);
-  let splittedResult = result.split(`\n`);
-  console.log(splittedResult);
-  let a = splittedResult[0];
-  console.log(a);
-  let b = splittedResult[2];
-  document.getElementById("display").innerHTML = parseInt(a);
+  document.getElementById("display").innerHTML = result / 100;
 }
-modulus();
+
+function plusMinus() {
+  let result = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = result * -1;
+}
