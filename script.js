@@ -13,10 +13,6 @@ function ac() {
   document.getElementById("display").innerHTML = "";
 }
 
-// function plusMinus() {
-//   document.getElementById("display").innerHTML += `- ${x}`;
-// }
-
 // function modulus() {
 //   let result = document.getElementById("display").innerHTML;
 //   console.log(result);
