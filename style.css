@@ -1,7 +1,6 @@
 .calculator {
-  width: 30vw;
-  height: 80vh;
-  margin-top: 4rem;
+  width: 300px;
+  height: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10,43 +9,41 @@
   border: 1px solid black;
   margin: auto;
   border-radius: 30px;
-  background-color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 0%, 0.89);
 }
 
 .display {
   width: 90%;
   height: 30%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
-  background-color: rgb(212, 248, 212);
+  background-color: hsla(0, 0%, 0%, 0.746);
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .numberDisplay {
   margin-bottom: 1rem;
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: white;
+  text-align: right;
 }
 
 .buttons > * {
   width: 21%;
-  height: 17%;
-
+  height: 19%;
+  margin: 3px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: palegreen;
+  background-color: grey;
 }
 
 .buttons > *:active {
-  background-color: yellow;
-}
-
-.display {
-  border: 1px solid black;
-  margin: auto;
-  border-radius: 20px;
+  background-color: rgb(27, 21, 11);
 }
 
 .buttons {
@@ -60,6 +57,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  user-select: none;
 }
 
 .zero {
@@ -67,6 +65,16 @@
 }
 
 .ac,
-.plus-minus {
+.plus-minus,
+.percentage {
   font-size: 1.4rem;
+  background-color: darkgrey;
+}
+
+.divide,
+.multiply,
+.minus,
+.plus,
+.equal {
+  background-color: rgb(255, 123, 0);
 }

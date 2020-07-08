@@ -1,47 +1,30 @@
-// function display() {
-//   for (i = 1; i <= 9; i++) {
-//     switch (i) {
-//       case 1:
-//         var x = 1;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 2:
-//         x = 2;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 3:
-//         x = 3;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 4:
-//         x = 4;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 5:
-//         x = 5;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 6:
-//         x = 6;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 7:
-//         x = 7;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 8:
-//         x = 8;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//       case 9:
-//         x = 9;
-//         document.getElementById("display").innerHTML = ` ${x}`;
-//         break;
-//     }
-//   }
-// }
+var number = "x";
 
 function display(x) {
-  var number = x;
-  document.getElementById("display").innerHTML = ` ${x}`;
+  document.getElementById("display").innerHTML += `${x}`;
 }
+
+function result() {
+  let result = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = eval(result);
+}
+
+function ac() {
+  document.getElementById("display").innerHTML = "";
+}
+
+// function plusMinus() {
+//   document.getElementById("display").innerHTML += `- ${x}`;
+// }
+
+function modulus() {
+  let result = document.getElementById("display").innerHTML;
+  console.log(result);
+  let splittedResult = result.split(`\n`);
+  console.log(splittedResult);
+  let a = splittedResult[0];
+  console.log(a);
+  let b = splittedResult[2];
+  document.getElementById("display").innerHTML = parseInt(a);
+}
+modulus();
